@@ -43,19 +43,6 @@ import com.expensetracker.app.util.DateUtils
 import com.expensetracker.app.util.IconUtils
 import com.expensetracker.app.util.formatAmount
 
-/**
- * The main dashboard of the application, displaying a summary of finances,
- * recent transactions, and quick access to various features like stats and settings.
- *
- * @param onAddExpense Callback to navigate to the Add Expense screen.
- * @param onEditExpense Callback to navigate to the Edit Expense screen with a specific ID.
- * @param onOpenStats Callback to navigate to the Statistics/Insights screen.
- * @param onOpenSettings Callback to navigate to the Settings screen.
- * @param onOpenCategories Callback to navigate to the Category Management screen.
- * @param onOpenAccounts Callback to navigate to the Accounts screen.
- * @param onOpenDebts Callback to navigate to the Debts/History screen.
- * @param viewModel The [HomeViewModel] that manages the state for this screen.
- */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
@@ -226,10 +213,6 @@ fun HomeScreen(
     }
 }
 
-/**
- * Displays a summary of the user's financial status, including balance,
- * income, expenses, and budget progress.
- */
 @Composable
 private fun SummaryCard(state: HomeUiState, onRangeSelected: (RangeFilter) -> Unit) {
     Card(
@@ -361,16 +344,6 @@ private fun EmptyState() {
     }
 }
 
-/**
- * Represents a single transaction item in the list.
- *
- * @param expense The expense data to display.
- * @param category The category associated with the expense.
- * @param currencySymbol The currency symbol to use for formatting.
- * @param onClick Callback when the row is clicked.
- * @param onFavorite Callback to toggle the favorite status.
- * @param onDelete Callback to delete the expense.
- */
 @Composable
 private fun ExpenseRow(
     expense: Expense,
