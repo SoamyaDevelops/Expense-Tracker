@@ -25,12 +25,6 @@ A professional, minimalist expense tracking application built with **Kotlin** an
 - **Security**: [AndroidX Biometric](https://developer.android.com/training/sign-in/biometric-auth)
 - **Background Tasks**: [WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager)
 
-## 📸 Screenshots
-
-| Dashboard | Insights | Security |
-| :---: | :---: | :---: |
-| *(Add screenshots here)* | *(Add screenshots here)* | *(Add screenshots here)* |
-
 ## 🚀 Getting Started
 
 ### Prerequisites
