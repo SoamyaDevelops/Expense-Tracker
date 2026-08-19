@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer Glow Circle -->
+    <path
+        android:pathData="M54,54m-38,0a38,38 0,1 1,76 0a38,38 0,1 1,-76 0"
+        android:strokeWidth="2"
+        android:strokeColor="#40FFFFFF" />
+
+    <!-- Main Icon Shape (Stylized Wallet/Coin) -->
+    <path
+        android:pathData="M54,30c-13.25,0 -24,10.75 -24,24s10.75,24 24,24s24,-10.75 24,-24s-10.75,-24 -24,-24zM54,72c-9.94,0 -18,-8.06 -18,-18s8.06,-18 18,-18s18,8.06 18,18s-8.06,18 -18,18z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="54"
+                android:centerY="54"
+                android:gradientRadius="24"
+                android:type="radial">
+                <item android:color="#FF00F2FE" android:offset="0" />
+                <item android:color="#FF4FACFE" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Inner Floating Element -->
+    <path
+        android:pathData="M54,44l6,10l-6,10l-6,-10z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Reflection/Shine -->
+    <path
+        android:pathData="M42,42c4,-4 10,-6 12,-6s8,2 12,6"
+        android:strokeWidth="1.5"
+        android:strokeColor="#80FFFFFF"
+        android:strokeLineCap="round" />
+
+</vector>
